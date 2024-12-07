@@ -21,9 +21,7 @@ const onClickAddPlus = (item) => {
   }
 }
 
-const onChangeSelect = (event) => {
-  filters.sortBy = event.target.value
-}
+const onChangeSelect = (event) => {filters.sortBy = event.target.value}
 
 const onChangeSearchInput = debouce((event) => {
   filters.searchQuery = event.target.value
@@ -35,7 +33,6 @@ const addToFavorite = async (item) => {
       const obj = {
         item_id: item.id,
       }
-
       item.isFavorite = true
       const { data } = await axios.post(`https://08e09035facc6854.mokky.dev/favorites`, obj)
       item.favoriteId = data.id

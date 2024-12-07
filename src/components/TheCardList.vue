@@ -10,8 +10,7 @@ const emit = defineEmits(['addToFavorite', 'addToCart'])
 </script>
 
 <template>
-  <div class="
-  grid
+  <div class="grid
   mobile-s:grid-cols-1
   mobile-l:grid-cols-2
   tablet:grid-cols-3
