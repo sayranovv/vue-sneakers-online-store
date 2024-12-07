@@ -53,9 +53,13 @@ provide('cart', {
 <template>
   <TheDrawer v-if="drawerOpen" :total-price="totalPrice" :vat-price="vatPrice" />
 
-  <div class="bg-white w-4/5 m-auto rounded-xl shadow-xl mt-14">
+  <div class="bg-white m-auto rounded-xl shadow-xl laptop:mt-14 mobile-l:w-auto laptop:w-11/12 laptop-l:w-4/5 tv:w-2/3" >
     <TheHeader :total-price="totalPrice" @open-drawer="openDrawer" />
-    <div class="p-10">
+    <div class="
+    tablet:p-10
+    mobile-s:p-4
+
+">
       <router-view></router-view>
     </div>
   </div>

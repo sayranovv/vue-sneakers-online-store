@@ -119,11 +119,19 @@ watch(filters, fetchItems)
 </script>
 
 <template>
-  <div class="flex justify-between items-center">
-    <h2 class="text-3xl font-bold mb-8">Все кроссовки</h2>
+  <div class="flex mobile-s:justify-center tablet:justify-between items-center flex-wrap">
+    <h2 class="text-3xl font-bold mobile-s:mb-8 tablet:mb-0">Все кроссовки</h2>
 
-    <div class="flex gap-4">
-      <select @change="onChangeSelect" class="py-2 px-3 border rounded-md outline-none">
+    <div class="flex gap-4 flex-wrap justify-center">
+      <select @change="onChangeSelect" class="py-2
+      px-3
+      border
+      rounded-md
+      outline-none
+      mobile-s:w-72
+      tablet:w-auto
+
+">
         <option value="name">По названию</option>
         <option value="price">Цена по возрастанию</option>
         <option value="-price">Цена по убыванию</option>
@@ -133,7 +141,7 @@ watch(filters, fetchItems)
         <img src="/search.svg" alt="search" class="absolute left-4 top-3" />
         <input
           @input="onChangeSearchInput"
-          class="border rounded-md py-2 pl-11 pr-4 outline-none focus:border-gray-400"
+          class="border rounded-md py-2 pl-11 pr-4 outline-none focus:border-gray-400 mobile-s:w-72 tablet:w-auto"
           type="text"
           placeholder="Поиск..."
         />
