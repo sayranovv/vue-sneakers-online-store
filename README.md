@@ -1,6 +1,16 @@
 # sneakers-online-store
 
-This template should help get you started developing with Vue 3 in Vite.
+Just online store
+
+## Technologies Used
+- Vue
+- Vue Router
+- TailwindCSS
+- Axios
+- @formkit/auto-animate
+- Composition API / Options API
+- ESLint
+- Pretiier
 
 ## Recommended IDE Setup
 
