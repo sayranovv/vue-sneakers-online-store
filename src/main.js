@@ -7,15 +7,17 @@ import App from './App.vue'
 
 import Home from '@/pages/Home.vue'
 import Favorites from '@/pages/Favorites.vue'
+import About from '@/pages/About.vue'
 
 const routes = [
   { path: '/', name: 'Home', component: Home },
   { path: '/favorites', name: 'Favorites', component: Favorites },
+  { path: '/about', name: 'About', component: About },
 ]
 
 const router = createRouter({
   history: createWebHistory(),
-  routes
+  routes,
 })
 
 const app = createApp(App)
